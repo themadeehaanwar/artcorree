@@ -1,452 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Artcorree | Original Art by Aqsa Fatima</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap');
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artcorree | Original Art by Aqsa Fatima</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap');
 
-:root {
---midnight-blue: #0F172A;
---baby-pink: #ffd1db;
---coquette-rose: #E8C5C8;
---vintage-cream: #FCF9F5;
---text-dark: #2C2C2C;
-}
+        :root {
+            --midnight-blue: #0F172A;
+            --baby-pink: #ffd1db;
+            --coquette-rose: #E8C5C8;
+            --vintage-cream: #FCF9F5;
+            --text-dark: #2C2C2C;
+        }
 
-* {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-}
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-body {
-font-family: 'Montserrat', sans-serif;
-background-color: var(--vintage-cream);
-color: var(--text-dark);
-line-height: 1.5;
-padding-bottom: 40px;
-}
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--vintage-cream);
+            color: var(--text-dark);
+            line-height: 1.5;
+            padding-bottom: 40px;
+        }
 
-header {
-background-color: var(--midnight-blue);
-color: var(--baby-pink);
-text-align: center;
-padding: 1.8rem 1rem 1.5rem 1rem;
-}
+        header {
+            background-color: var(--midnight-blue);
+            color: var(--baby-pink);
+            text-align: center;
+            padding: 1.8rem 1rem 1.5rem 1rem;
+        }
 
-header h1 {
-font-family: 'Playfair Display', serif;
-font-size: 3rem; /* Set exactly to 2.8 size */
-letter-spacing: 2px;
-font-weight: 400;
-margin-bottom: 0.1rem;
-}
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            letter-spacing: 2px;
+            font-weight: 400;
+            margin-bottom: 0.1rem;
+        }
 
-.header-sub {
-font-family: 'Playfair Display', serif;
-font-style: italic;
-font-size: 1rem;
-color: var(--coquette-rose);
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 8px;
-}
+        .header-sub {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1rem;
+            color: var(--coquette-rose);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
 
-.shipping-strip {
-background-color: var(--coquette-rose);
-color: var(--midnight-blue);
-text-align: center;
-padding: 0.35rem 1rem;
-font-size: 0.68rem;
-text-transform: uppercase;
-letter-spacing: 1.5px;
-font-weight: 600;
-}
+        .shipping-strip {
+            background-color: var(--coquette-rose);
+            color: var(--midnight-blue);
+            text-align: center;
+            padding: 0.35rem 1rem;
+            font-size: 0.68rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 600;
+        }
 
-.container {
-max-width: 1000px;
-margin: 0 auto;
-padding: 1.5rem 1rem 2rem 1rem;
-}
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 1.5rem 1rem 2rem 1rem;
+        }
 
-.gallery-grid {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-gap: 1.2rem;
-}
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.2rem;
+        }
 
-.art-card {
-background: white;
-border: 1px solid rgba(232, 197, 200, 0.3);
-border-radius: 4px;
-padding: 0.8rem;
-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-}
+        .art-card {
+            background: white;
+            border: 1px solid rgba(232, 197, 200, 0.3);
+            border-radius: 4px;
+            padding: 0.8rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
 
-.image-frame {
-background: var(--vintage-cream);
-border: 1px solid #EAEAEA;
-width: 100%;
-aspect-ratio: 4 / 5;
-margin-bottom: 0.8rem;
-display: flex;
-justify-content: center;
-align-items: center;
-overflow: hidden;
-padding: 0.3rem;
-}
+        .image-frame {
+            background: var(--vintage-cream);
+            border: 1px solid #EAEAEA;
+            width: 100%;
+            aspect-ratio: 4 / 5;
+            margin-bottom: 0.8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            padding: 0.3rem;
+        }
 
-.image-frame img {
-width: 100%;
-height: 100%;
-display: block;
-object-fit: contain;
-}
+        .image-frame img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: contain;
+        }
 
-.art-details {
-text-align: center;
-flex-grow: 1;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-}
+        .art-details {
+            text-align: center;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
 
-.art-title {
-font-family: 'Playfair Display', serif;
-font-size: 1.15rem;
-font-weight: 600;
-margin-bottom: 0.2rem;
-color: var(--midnight-blue);
-line-height: 1.2;
-}
+        .art-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-bottom: 0.2rem;
+            color: var(--midnight-blue);
+            line-height: 1.2;
+        }
 
-.art-meta {
-font-size: 0.72rem;
-text-transform: uppercase;
-letter-spacing: 0.5px;
-color: #666;
-margin-bottom: 0.8rem;
-font-weight: 500;
-}
+        .art-meta {
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 0.8rem;
+            font-weight: 500;
+        }
 
-.art-price {
-font-family: 'Playfair Display', serif;
-font-size: 1.2rem;
-color: var(--text-dark);
-font-weight: 600;
-margin-bottom: 0.6rem;
-}
+        .art-price {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            color: var(--text-dark);
+            font-weight: 600;
+            margin-bottom: 0.6rem;
+        }
 
-.btn-inquire {
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 4px;
-background-color: var(--midnight-blue);
-color: white;
-text-decoration: none;
-padding: 0.6rem 0.4rem;
-font-size: 0.72rem;
-text-transform: uppercase;
-letter-spacing: 1px;
-border-radius: 2px;
-transition: background 0.3s ease;
-font-weight: 500;
-}
+        .btn-inquire {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            background-color: var(--midnight-blue);
+            color: white;
+            text-decoration: none;
+            padding: 0.6rem 0.4rem;
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 2px;
+            transition: background 0.3s ease;
+            font-weight: 500;
+        }
 
-.btn-inquire:hover {
-background-color: var(--coquette-rose);
-color: var(--midnight-blue);
-}
+        .btn-inquire:hover {
+            background-color: var(--coquette-rose);
+            color: var(--midnight-blue);
+        }
 
-.btn-inquire svg {
-width: 12px;
-height: 12px;
-fill: currentColor;
-}
+        .btn-inquire svg {
+            width: 12px;
+            height: 12px;
+            fill: currentColor;
+        }
 
-.artist-bio {
-background: white;
-border-top: 2px solid var(--coquette-rose);
-padding: 1.5rem;
-margin: 3rem auto 1rem auto;
-max-width: 600px;
-border-radius: 6px;
-box-shadow: 0 4px 12px rgba(0,0,0,0.01);
-text-align: center;
-}
+        .artist-bio {
+            background: white;
+            border-top: 2px solid var(--coquette-rose);
+            padding: 1.5rem;
+            margin: 3rem auto 1rem auto;
+            max-width: 600px;
+            border-radius: 6px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.01);
+            text-align: center;
+        }
 
-.bio-title {
-font-family: 'Playfair Display', serif;
-font-weight: 600;
-font-size: 1.2rem;
-color: var(--midnight-blue);
-margin-bottom: 0.5rem;
-}
+        .bio-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            font-size: 1.2rem;
+            color: var(--midnight-blue);
+            margin-bottom: 0.5rem;
+        }
 
-.bio-text {
-font-size: 0.85rem;
-color: #555;
-line-height: 1.5;
-}
+        .bio-text {
+            font-size: 0.85rem;
+            color: #555;
+            line-height: 1.5;
+        }
 
-.floating-actions {
-position: fixed;
-bottom: 20px;
-right: 12px;
-display: flex;
-flex-direction: column;
-gap: 8px;
-z-index: 1000;
-}
+        .floating-actions {
+            position: fixed;
+            bottom: 20px;
+            right: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            z-index: 1000;
+        }
 
-.float-btn {
-width: 42px;
-height: 42px;
-border-radius: 50px;
-display: flex;
-justify-content: center;
-align-items: center;
-box-shadow: 0 3px 10px rgba(0,0,0,0.12);
-text-decoration: none;
-transition: transform 0.2s ease;
-}
+        .float-btn {
+            width: 42px;
+            height: 42px;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+            text-decoration: none;
+            transition: transform 0.2s ease;
+        }
 
-.float-btn:active {
-transform: scale(0.9);
-}
+        .float-btn:active {
+            transform: scale(0.9);
+        }
 
-.float-ig { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: white; }
+        .float-ig { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: white; }
 
-.float-btn svg {
-width: 20px;
-height: 20px;
-fill: currentColor;
-}
+        .float-btn svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
 
-footer {
-background-color: #F0E6E8;
-text-align: center;
-padding: 2rem 1rem;
-font-size: 0.8rem;
-color: #555;
-border-top: 1px solid var(--coquette-rose);
-}
+        footer {
+            background-color: #F0E6E8;
+            text-align: center;
+            padding: 2rem 1rem;
+            font-size: 0.8rem;
+            color: #555;
+            border-top: 1px solid var(--coquette-rose);
+        }
 
-footer p { margin-bottom: 0.4rem; }
-.instagram-link { color: var(--midnight-blue); text-decoration: none; font-weight: 600; border-bottom: 1px solid var(--midnight-blue); }
+        footer p { margin-bottom: 0.4rem; }
+        .instagram-link { color: var(--midnight-blue); text-decoration: none; font-weight: 600; border-bottom: 1px solid var(--midnight-blue); }
 
-@media (max-width: 480px) {
-.gallery-grid { gap: 0.8rem; }
-.art-card { padding: 0.6rem; }
-.art-title { font-size: 1rem; }
-.btn-inquire { letter-spacing: 0.5px; padding: 0.55rem 0.2rem; font-size: 0.68rem; }
-}
-</style>
+        @media (max-width: 480px) {
+            .gallery-grid { gap: 0.8rem; }
+            .art-card { padding: 0.6rem; }
+            .art-title { font-size: 1rem; }
+            .btn-inquire { letter-spacing: 0.5px; padding: 0.55rem 0.2rem; font-size: 0.68rem; }
+        }
+    </style>
 </head>
 <body>
 
-<header>
-<h1>Artcorree</h1>
-<div class="header-sub">🎀 <span>Original Artworks by Aqsa Fatima</span> 🎀</div>
-</header>
+    <header>
+        <h1>Artcorree</h1>
+        <div class="header-sub">🎀 <span>Original Artworks by Aqsa Fatima</span> 🎀</div>
+    </header>
 
-<div class="shipping-strip">
-✨ Free Delivery Across India ✨
-</div>
+    <div class="shipping-strip">
+        ✨ Free Delivery Across India ✨
+    </div>
 
-<div class="container">
+    <div class="container">
 
-<div class="gallery-grid">
+        <div class="gallery-grid">
 
-<div class="art-card">
-<div class="image-frame">
-<img src="https://lh3.googleusercontent.com/d/1tA1XMrKNk8M9Sr0ZO92KhOWl_FdiJaT5" alt="Pink Pastel Miniature Trio">
-</div>
-<div class="art-details">
-<div>
-<h2 class="art-title">Coquette Trio</h2>
-<div class="art-meta">Set of 3 Miniatures on Paperboard</div>
-</div>
-<div>
-<div class="art-price">₹600</div>
-<a href="https://ig.me/m/artcorree" target="_blank" class="btn-inquire">
-Buy Now
-</a>
-</div>
-</div>
-</div>
-
-<div class="art-card">
-<div class="image-frame">
-<img src="https://lh3.googleusercontent.com/d/1SVN5jz0C-QaJfGuJQc3XaaU6y8d6a4qs" alt="Dusk Serenade">
-</div>
-<div class="art-details">
-<div>
-<h2 class="art-title">Dusk Serenade</h2>
-<div class="art-meta">Acrylic on Paper</div>
-</div>
-<div>
-<div class="art-price">₹1,300</div>
-<a href="https://ig.me/m/artcorree" target="_blank" class="btn-inquire">
-Buy Now
-</a>
-</div>
-</div>
-</div>
-
-<div class="art-card">
-<div class="image-frame">
-<img src="https://lh3.googleusercontent.com/d/1yxhruX_ZLw4mZ_zEVc0aeeF_5DHdIaTJ" alt="Midnight in Paris">
-</div>
-<div class="art-details">
-<div>
-<h2 class="art-title">Midnight in Paris</h2>
-<div class="art-meta">Acrylic on Paper</div>
-</div>
-<div>
-<div class="art-price">₹500</div>
-<a href="https://ig.me/m/artcorree" target="_blank" class="btn-inquire">
-Buy Now
-</a>
-</div>
-</div>
-</div>
-
-<div class="art-card">
-<div class="image-frame">
-<img src="https://lh3.googleusercontent.com/d/1mFqp2IE4jWToD2D6hepNrxTLhy45bz4e" alt="Blossom Tapestry">
-</div>
-<div class="art-details">
-<div>
-<h2 class="art-title">Blossom Tapestry</h2>
-<div class="art-meta">Acrylic on Canvas (4x4 in.)</div>
-</div>
-<div>
-<div class="art-price">₹500</div>
-<a href="https://ig.me/m/artcorree" target="_blank" class="btn-inquire">
-Buy Now
-</a>
-</div>
-</div>
-</div>
-
-<div class="art-card">
-<div class="image-frame">
-<img src="https://lh3.googleusercontent.com/d/1MY2-DtBMYwVQmIm2P-ZJSq_X8u2FQASc" alt="Reverie of Stars">
-</div>
-<div class="art-details">
-<div>
-<h2 class="art-title">Reverie of Stars</h2>
-<div class="art-meta">Acrylic on Paper</div>
-</div>
-<div>
-<div class="art-price">₹300</div>
-<a href="https://ig.me/m/artcorree" target="_blank" class="btn-inquire">
-Buy Now
-</a>
-</div>
-</div>
-</div>
-
-<div class="art-card">
-<div class="image-frame">
-<img src="https://lh3.googleusercontent.com/d/18zCfqji0kyy7KD_ar_cW9Hhs1Okf8D53" alt="Enchanted Bower">
-</div>
-<div class="art-details">
-<div>
-<h2 class="art-title">Enchanted Bower</h2>
-<div class="art-meta">Acrylic on Paper</div>
-</div>
-<div>
-<div class="art-price">₹800</div>
-<a href="https://ig.me/m/artcorree" target="_blank" class="btn-inquire">
-Buy Now
-</a>
-</div>
-</div>
-</div>
-
-<div class="art-card">
-<div class="image-frame">
-<img src="https://lh3.googleusercontent.com/d/1iWCl4SI-DTcUetoZ0HVRie5-j3Uw3FD1" alt="Grace on Water">
-</div>
-<div class="art-details">
-<div>
-<h2 class="art-title">Grace on Water</h2>
-<div class="art-meta">Acrylic on Paper</div>
-</div>
-<div>
-<div class="art-price">₹400</div>
-<a href="https://ig.me/m/artcorree" target="_blank" class="btn-inquire">
-Buy Now
-</a>
-</div>
-</div>
-</div>
-
-<div class="art-card">
-<div class="image-frame">
-<img src="https://lh3.googleusercontent.com/d/1WkphpEUkpLvrs3NaK04Jw5Cil81gcsYX" alt="A Window to Spring">
-</div>
-<div class="art-details">
-<div>
-<h2 class="art-title">A Window to Spring</h2>
-<div class="art-meta">Acrylic on Canvas (4x4 in.)</div>
-</div>
-<div>
-<div class="art-price">₹600</div>
-<a href="https://ig.me/m/artcorree" target="_blank" class="btn-inquire">
-Buy Now
-</a>
-</div>
-</div>
-</div>
-
-<div class="art-card">
-<div class="image-frame">
-<img src="https://lh3.googleusercontent.com/d/1GepeMrqji8LlPf7Go0rhxF2roIaDXeqR" alt="Lakeside Reverie">
-</div>
-<div class="art-details">
-<div>
-<h2 class="art-title">Lakeside Reverie</h2>
-<div class="art-meta">Acrylic on Paper</div>
-</div>
-<div>
-<div class="art-price">₹700</div>
-<a href="https://ig.me/m/artcorree" target="_blank" class="btn-inquire">
-Buy Now
-</a>
-</div>
-</div>
-</div>
-
-</div>
-
-<div class="artist-bio">
-<h3 class="bio-title">Meet the Artist ✨</h3>
-<p class="bio-text">
-Aqsa is a passionate school student creating beautiful worlds on paper and canvas. Balancing classrooms with paintbrushes, she dreams of attending fine arts college to pursue this as her lifelong career. Follow her journey on Instagram <a href="https://instagram.com/artcorree" target="_blank" class="instagram-link">@artcorree</a> for behind-the-scenes magic and her latest processes!
-</p>
-</div>
-
-</div>
-
-<div class="floating-actions">
-<a href="https://instagram.com/artcorree" target="_blank" class="float-btn float-ig" title="Follow on Instagram">
-<svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-</a>
-</div>
-
-</body>
-</html>
+            <div class="art-card">
+                <div class="image-frame">
+                    <img src="https://lh3.googleusercontent.com/d/1tA1XMrKNk8M9Sr0ZO92KhOWl_FdiJaT5" alt="Pink Pastel Miniature Trio">
                 </div>
+                <div class="art-details">
+                    <div>
+                        <h2 class="art-title">Coquette Trio</h2>
+                        <div class="art-meta">Set of 3 Miniatures on Paperboard</div>
+                    </div>
+                    <div>
+                        <div class="art-price">₹600</div>
+                        <a href="https://ig.me/m/artcorree" target="_blank" class="btn-inquire">
+                            Buy Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <div class="image-frame">
+                    <img src="https://lh3.googleusercontent.com/d/1SVN5jz0C-QaJfGuJQc3XaaU6y8d6a4qs" alt="Dusk Serenade">
+                </div>
+                <div class="art-details">
+                    <div>
+                        <h2 class="art-title">Dusk Serenade</h2>
+                        <div class="art-meta">Acrylic on Paper</div>
+                    </div>
+                    <div>
+                        <div class="art-price">₹1,300</div>
+                        <a href="https://ig.me/m/artcorree" target="_blank" class="btn-inquire">
+                            Buy Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <div class="image-frame">
+                    <img src="https://lh3.googleusercontent.com/d/1yxhruX_ZLw4mZ_zEVc0aeeF_5DHdIaTJ" alt="Midnight in Paris">
+                </div>
+                <div class="art-details">
+                    <div>
+                        <h2 class="art-title">Midnight in Paris</h2>
+                        <div class="art-meta">Acrylic on Paper</div>
+                    </div>
+                    <div>
+                        <div class="art-price">₹500</div>
+                        <a href="https://ig.me/m/artcorree" target="_blank" class="btn-inquire">
+                            Buy Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <div class="image-frame">
+                    <img src="https://lh3.googleusercontent.com/d/1mFqp2IE4jWToD2D6hepNrxTLhy45bz4e" alt="Blossom Tapestry">
+                </div>
+                <div class="art-details">
+                    <div>
+                        <h2 class="art-title">Blossom Tapestry</h2>
+                        <div class="art-meta">Acrylic on Canvas (4x4 in.)</div>
+                    </div>
+                    <div>
+                        <div class="art-price">₹500</div>
+                        <a href="https://ig.me/m/artcorree" target="_blank" class="btn-inquire">
+                            Buy Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <div class="image-frame">
+                    <img src="https://lh3.googleusercontent.com/d/1MY2-DtBMYwVQmIm2P-ZJSq_X8u2FQASc" alt="Reverie of Stars">
+                </div>
+                <div class="art-details">
+                    <div>
+                        <h2 class="art-title">Reverie of Stars</h2>
+                        <div class="art-meta">Acrylic on Paper</div>
+                    </div>
+                    <div>
+                        <div class="art-price">₹300</div>
+                        <a href="https://ig.me/m/artcorree" target="_blank" class="btn-inquire">
+                            Buy Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <div class="image-frame">
+                    <img src="https://lh3.googleusercontent.com/d/18zCfqji0kyy7KD_ar_cW9Hhs1Okf8D53" alt="Enchanted Bower">
+                </div>
+                <div class="art-details">
+                    <div>
+                        <h2 class="art-title">Enchanted Bower</h2>
+                        <div class="art-meta">Acrylic on Paper</div>
+                    </div>
+                    <div>
+                        <div class="art-price">₹800</div>
+                        <a href="https://ig.me/m/artcorree" target="_blank" class="btn-inquire">
+                            Buy Now
+                        </a>
+                    </div>
+                </div>
+            </div>
 
             <div class="art-card">
                 <div class="image-frame">
@@ -477,6 +402,24 @@ Aqsa is a passionate school student creating beautiful worlds on paper and canva
                     </div>
                     <div>
                         <div class="art-price">₹600</div>
+                        <a href="https://ig.me/m/artcorree" target="_blank" class="btn-inquire">
+                            Buy Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <div class="image-frame">
+                    <img src="https://lh3.googleusercontent.com/d/1GepeMrqji8LlPf7Go0rhxF2roIaDXeqR" alt="Lakeside Reverie">
+                </div>
+                <div class="art-details">
+                    <div>
+                        <h2 class="art-title">Lakeside Reverie</h2>
+                        <div class="art-meta">Acrylic on Paper</div>
+                    </div>
+                    <div>
+                        <div class="art-price">₹700</div>
                         <a href="https://ig.me/m/artcorree" target="_blank" class="btn-inquire">
                             Buy Now
                         </a>
